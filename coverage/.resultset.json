@@ -1,29 +1,10 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/tnodland/turing/3module/projects/to_sweater_or_not_to_sweater/app/services/google_service.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
+      "/Users/tnodland/turing/3module/projects/to_sweater_or_not_to_sweater/app/services/yelp_service.rb": [
         1,
         1,
         null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        2,
-        2,
-        2,
         null,
         null
       ],
@@ -112,6 +93,32 @@
         0,
         0
       ],
+      "/Users/tnodland/turing/3module/projects/to_sweater_or_not_to_sweater/app/services/google_service.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
       "/Users/tnodland/turing/3module/projects/to_sweater_or_not_to_sweater/app/services/flikr_service.rb": [
         0,
         0,
@@ -170,6 +177,6 @@
         0
       ]
     },
-    "timestamp": 1564413707
+    "timestamp": 1564414833
   }
 }
