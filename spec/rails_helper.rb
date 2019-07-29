@@ -32,6 +32,7 @@ VCR.configure do |config|
   config.filter_sensitive_data('DARKSKY-API-KEY') { ENV['DARKSKY-API-KEY'] }
   config.filter_sensitive_data('GOOGLE-API-KEY') { ENV['GOOGLE-API-KEY'] }
   config.filter_sensitive_data('FLIKR-API-KEY') { ENV['FLIKR-API-KEY'] }
+  config.filter_sensitive_data('GOOGLE-DIRECTIONS-API-KEY') { ENV['GOOGLE-DIRECTIONS-API-KEY'] }
 end
 
 begin
