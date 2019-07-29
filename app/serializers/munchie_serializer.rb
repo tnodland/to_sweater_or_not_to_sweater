@@ -1,4 +1,4 @@
 class MunchieSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :id, :name, :location
+  attributes :id, :name, :address
 end

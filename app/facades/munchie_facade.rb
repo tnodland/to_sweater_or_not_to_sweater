@@ -15,8 +15,7 @@ class MunchieFacade
     restaurants_full = yelp_service.resturaunts_open_at(@ending_location, time_at_arrival, 3, @food_type)
     restaurants = JSON.parse(restaurants_full.body, symbolize_names: true)[:businesses]
     restaurants.map do |r_data|
-      binding.pry
-      Resturaunt.new(r_data)
+      Restaurant.new(r_data)
     end
   end
 

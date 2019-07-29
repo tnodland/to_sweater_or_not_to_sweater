@@ -32,6 +32,7 @@ RSpec.describe Restaurant do
 
     restaurant = Restaurant.new(data)
     expect(restaurant.name).to eq("Kan's Kitchen")
+    expect(restaurant.id).to eq("M4MwxQAA58B7ENV8ootI-w")
     expect(restaurant.address).to eq("1620 S Prairie Ave Pueblo CO 81005")
     end
   end
