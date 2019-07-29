@@ -3,8 +3,7 @@ require 'rails_helper'
 RSpec.describe YelpService, :vcr do
   it "can get resturaunts that will be open at a given time" do
     service = YelpService.new
-    response = service.resturaunts_open_at("pueblo co", 1564414406, 3)
-
+    response = service.resturaunts_open_at("pueblo,co", 1564414406, 3, "chinese")
     body = JSON.parse(response.body, symbolize_names: true)
 
     expect(body).to be_a(Hash)

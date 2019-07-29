@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.yelp.com/v3/businesses/search?limit=3&location=pueblo%20co&open_at=1564414406&term=restaurants
+    uri: https://api.yelp.com/v3/businesses/search?categories=chinese&limit=3&location=pueblo,co&open_at=1564414406&term=restaurants
     body:
       encoding: US-ASCII
       string: ''
@@ -27,64 +27,65 @@ http_interactions:
       Ratelimit-Dailylimit:
       - '5000'
       Ratelimit-Remaining:
-      - '4992'
+      - '4976'
       Ratelimit-Resettime:
       - '2019-07-30T00:00:00+00:00'
       X-Zipkin-Id:
-      - 88649b3fe3076d63
+      - 92cee27d1681853d
       X-B3-Sampled:
       - '0'
       X-Proxied:
-      - 10-69-140-124-uswest2bprod
+      - 10-69-119-39-uswest2aprod
       Transfer-Encoding:
       - chunked
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 29 Jul 2019 15:51:22 GMT
+      - Mon, 29 Jul 2019 16:09:40 GMT
       Via:
       - 1.1 varnish
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-den19650-DEN
+      - cache-den19624-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
     body:
       encoding: ASCII-8BIT
-      string: '{"businesses": [{"id": "TJTZuf8hdm2SpqrCKV5n9A", "alias": "brues-alehouse-pueblo-3",
-        "name": "Brues Alehouse", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/K4xXqhF4wguJ5JZVTgmWCw/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/brues-alehouse-pueblo-3?adjust_creative=r-siyzVnUWn0GAv15Cv_yg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=r-siyzVnUWn0GAv15Cv_yg",
-        "review_count": 299, "categories": [{"alias": "breweries", "title": "Breweries"},
-        {"alias": "tradamerican", "title": "American (Traditional)"}, {"alias": "musicvenues",
-        "title": "Music Venues"}], "rating": 4.0, "coordinates": {"latitude": 38.2654120794923,
-        "longitude": -104.609714939094}, "transactions": [], "price": "$$", "location":
-        {"address1": "120 Riverwalk Pl", "address2": "", "address3": "", "city": "Pueblo",
-        "zip_code": "81003", "country": "US", "state": "CO", "display_address": ["120
-        Riverwalk Pl", "Pueblo, CO 81003"]}, "phone": "+17199249670", "display_phone":
-        "(719) 924-9670", "distance": 3220.6660506639014}, {"id": "0Kzu5Sv1_liiiHpbFc6FlQ",
-        "alias": "the-hangar-pueblo", "name": "The Hangar", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/x04Ooefr88PuB1vlCIVp9g/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/the-hangar-pueblo?adjust_creative=r-siyzVnUWn0GAv15Cv_yg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=r-siyzVnUWn0GAv15Cv_yg",
-        "review_count": 65, "categories": [{"alias": "tradamerican", "title": "American
-        (Traditional)"}, {"alias": "seafood", "title": "Seafood"}], "rating": 4.0,
-        "coordinates": {"latitude": 38.28971, "longitude": -104.60787}, "transactions":
-        [], "price": "$$", "location": {"address1": "100 W 23rd St", "address2": "",
-        "address3": "", "city": "Pueblo", "zip_code": "81003", "country": "US", "state":
-        "CO", "display_address": ["100 W 23rd St", "Pueblo, CO 81003"]}, "phone":
-        "+17195448208", "display_phone": "(719) 544-8208", "distance": 3692.2844895662997},
-        {"id": "qa-JLTeHxi0GJxDr1-0xPw", "alias": "mill-stop-cafe-pueblo", "name":
-        "Mill Stop Cafe", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/AIyRn0PW7KPTbq-y0-3b-w/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/mill-stop-cafe-pueblo?adjust_creative=r-siyzVnUWn0GAv15Cv_yg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=r-siyzVnUWn0GAv15Cv_yg",
-        "review_count": 101, "categories": [{"alias": "mexican", "title": "Mexican"}],
-        "rating": 4.0, "coordinates": {"latitude": 38.2390823364258, "longitude":
-        -104.614639282227}, "transactions": [], "price": "$", "location": {"address1":
-        "317 Bay State Ave", "address2": "", "address3": "", "city": "Pueblo", "zip_code":
-        "81004", "country": "US", "state": "CO", "display_address": ["317 Bay State
-        Ave", "Pueblo, CO 81004"]}, "phone": "+17195640407", "display_phone": "(719)
-        564-0407", "distance": 5011.493863805519}], "total": 78, "region": {"center":
-        {"longitude": -104.5733642578125, "latitude": 38.27035217485165}}}'
+      string: '{"businesses": [{"id": "c7zEc16iJa4_hoNLkhts8w", "alias": "yellow-mountain-tea-house-colorado-springs",
+        "name": "Yellow Mountain Tea House", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/XRUjvww-zh8qCoPx4rh38Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/yellow-mountain-tea-house-colorado-springs?adjust_creative=r-siyzVnUWn0GAv15Cv_yg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=r-siyzVnUWn0GAv15Cv_yg",
+        "review_count": 171, "categories": [{"alias": "tea", "title": "Tea Rooms"},
+        {"alias": "dimsum", "title": "Dim Sum"}], "rating": 4.5, "coordinates": {"latitude":
+        38.8486853, "longitude": -104.864644}, "transactions": [], "price": "$", "location":
+        {"address1": "2616 W Colorado Ave", "address2": "Ste 21", "address3": "",
+        "city": "Colorado Springs", "zip_code": "80904", "country": "US", "state":
+        "CO", "display_address": ["2616 W Colorado Ave", "Ste 21", "Colorado Springs,
+        CO 80904"]}, "phone": "+17192478487", "display_phone": "(719) 247-8487", "distance":
+        69115.13234470016}, {"id": "wKb2ITmSRYN6I7Py14YPUA", "alias": "panda-express-pueblo",
+        "name": "Panda Express", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/x0Bgoyf2t0yGK6EhiEedqQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/panda-express-pueblo?adjust_creative=r-siyzVnUWn0GAv15Cv_yg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=r-siyzVnUWn0GAv15Cv_yg",
+        "review_count": 21, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "hotdogs", "title": "Fast Food"}], "rating": 2.5, "coordinates":
+        {"latitude": 38.2325574, "longitude": -104.6628568}, "transactions": [], "price":
+        "$$", "location": {"address1": "2001 S Pueblo Blvd", "address2": "", "address3":
+        "", "city": "Pueblo", "zip_code": "81005", "country": "US", "state": "CO",
+        "display_address": ["2001 S Pueblo Blvd", "Pueblo, CO 81005"]}, "phone": "+17195649000",
+        "display_phone": "(719) 564-9000", "distance": 8872.987172857325}, {"id":
+        "JbHvbBMFYOdq_VZ33baTNA", "alias": "pho-saigon-grill-colorado-springs", "name":
+        "Pho Saigon Grill", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/fx0LIntOjBcM3HihRtYmYw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/pho-saigon-grill-colorado-springs?adjust_creative=r-siyzVnUWn0GAv15Cv_yg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=r-siyzVnUWn0GAv15Cv_yg",
+        "review_count": 80, "categories": [{"alias": "vietnamese", "title": "Vietnamese"},
+        {"alias": "chinese", "title": "Chinese"}], "rating": 3.5, "coordinates": {"latitude":
+        38.7879252396266, "longitude": -104.75639659641}, "transactions": [], "price":
+        "$", "location": {"address1": "3071 S Academy Blvd", "address2": "", "address3":
+        "", "city": "Colorado Springs", "zip_code": "80916", "country": "US", "state":
+        "CO", "display_address": ["3071 S Academy Blvd", "Colorado Springs, CO 80916"]},
+        "phone": "+17193910148", "display_phone": "(719) 391-0148", "distance": 59713.09052396834}],
+        "total": 11, "region": {"center": {"longitude": -104.5733642578125, "latitude":
+        38.27035217485165}}}'
     http_version: 
-  recorded_at: Mon, 29 Jul 2019 15:51:22 GMT
+  recorded_at: Mon, 29 Jul 2019 16:09:40 GMT
 recorded_with: VCR 5.0.0
