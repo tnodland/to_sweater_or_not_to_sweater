@@ -11,6 +11,8 @@
         1,
         1,
         1,
+        1,
+        0,
         null,
         null
       ],
@@ -64,6 +66,23 @@
       "/Users/tnodland/turing/3module/projects/to_sweater_or_not_to_sweater/app/models/application_record.rb": [
         0,
         0,
+        0
+      ],
+      "/Users/tnodland/turing/3module/projects/to_sweater_or_not_to_sweater/app/serializers/munchie_serializer.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/tnodland/turing/3module/projects/to_sweater_or_not_to_sweater/app/facades/munchie_facade.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
         0
       ],
       "/Users/tnodland/turing/3module/projects/to_sweater_or_not_to_sweater/app/facades/forecast_facade.rb": [
@@ -198,6 +217,6 @@
         0
       ]
     },
-    "timestamp": 1564417478
+    "timestamp": 1564418294
   }
 }
