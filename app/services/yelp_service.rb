@@ -4,10 +4,20 @@ class YelpService
   end
 
   def resturaunts_open_at(location, time, limit, food_type)
-    conn = Faraday.new("https://api.yelp.com/v3/businesses/search?term=restaurants&location=#{location}&limit=#{limit}&open_at=#{time}&categories=#{food_type}") do |f|
-      f.adapter Faraday.default_adapter
-      f.headers['Authorization'] = "Bearer #{@yelp_key}"
+    conn.get "businesses/search" do |req|
+      req.params[:term] = "restaurants"
+      req.params[:location] = location
+      req.params[:limit] = limit
+      req.params[:open_at] = time
+      req.params[:categories] = food_type
     end
-    conn.get
   end
+
+  private
+    def conn
+      @_conn ||= Faraday.new("https://api.yelp.com/v3/") do |f|
+        f.adapter Faraday.default_adapter
+        f.headers['Authorization'] = "Bearer #{@yelp_key}"
+      end
+    end
 end
