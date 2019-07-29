@@ -1,5 +1,5 @@
 class GoogleService
-  def get_coords(location)
+  def coordiantes_from_location(location)
     conn.get("geocode/json") do |req|
       req.params[:address] = location
     end

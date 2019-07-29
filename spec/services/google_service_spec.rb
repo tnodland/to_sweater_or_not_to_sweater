@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe GoogleService do
+RSpec.describe GoogleService, :vcr do
   it "can return lat and long from a location" do
     service = GoogleService.new
 
@@ -8,7 +8,7 @@ RSpec.describe GoogleService do
     body = JSON.parse(response.body, symbolize_names: true)
 
     expect(body).to be_a(Hash)
-    expect(body).to have_key(:lat)
-    expect(body).to have_key(:lng)
+    expect(body[:results][0][:geometry][:location]).to have_key(:lat)
+    expect(body[:results][0][:geometry][:location]).to have_key(:lng)
   end
 end

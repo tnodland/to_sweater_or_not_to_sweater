@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe FlikrService do
+RSpec.describe FlikrService, :vcr do
   it "returns an image from lat and long" do
     service = FlikrService.new
 
