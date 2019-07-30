@@ -5,6 +5,14 @@ class GoogleService
     end
   end
 
+  def time_between(origin, destination)
+    conn.get("directions/json") do |req|
+      req.params[:origin] = origin
+      req.params[:destination] = destination
+      req.params[:key] = ENV['GOOGLE-DIRECTIONS-API-KEY']
+    end
+  end
+
 
   private
     def conn

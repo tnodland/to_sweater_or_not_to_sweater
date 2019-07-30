@@ -25,6 +25,7 @@ require 'rspec/rails'
 # Checks for pending migrations and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove these lines.
 VCR.configure do |config|
+  config.allow_http_connections_when_no_cassette = true
   config.ignore_localhost = true
   config.cassette_library_dir = 'spec/cassettes'
   config.hook_into :webmock
@@ -32,6 +33,8 @@ VCR.configure do |config|
   config.filter_sensitive_data('DARKSKY-API-KEY') { ENV['DARKSKY-API-KEY'] }
   config.filter_sensitive_data('GOOGLE-API-KEY') { ENV['GOOGLE-API-KEY'] }
   config.filter_sensitive_data('FLIKR-API-KEY') { ENV['FLIKR-API-KEY'] }
+  config.filter_sensitive_data('GOOGLE-DIRECTIONS-API-KEY') { ENV['GOOGLE-DIRECTIONS-API-KEY'] }
+  config.filter_sensitive_data('YELP-API-KEY') { ENV['YELP-API-KEY'] }
 end
 
 begin
