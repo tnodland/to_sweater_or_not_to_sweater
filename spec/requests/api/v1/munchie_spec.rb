@@ -7,8 +7,8 @@ RSpec.describe "munchie request" do
     expect(response).to be_successful
     parsed_response = JSON.parse(response.body, symbolize_names: true)
 
-    expect(parsed_response[:data]).to be_a(Array)
-    expect(parsed_response[:data][0]).to be_a(Hash)
-    expect(parsed_response[:data][0]).to have_key(:id)
+    expect(parsed_response[:munchies][:data]).to be_a(Array)
+    expect(parsed_response[:munchies][:data][0]).to be_a(Hash)
+    expect(parsed_response[:munchies][:data][0]).to have_key(:id)
   end
 end

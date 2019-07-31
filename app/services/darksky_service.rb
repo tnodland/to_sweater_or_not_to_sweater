@@ -3,6 +3,17 @@ class DarkskyService
     conn.get("#{lat},#{long}")
   end
 
+  def weather_at_time(lat, long, time)
+    weather = weather(lat, long)
+    parsed_weather = JSON.parse(weather.body, symbolize_names: true)[:hourly]
+    if time.include?("hour")
+      hour =  time.chars.first.to_i
+      parsed_weather[:data][hour]
+    else
+      parsed_weather[:data][0]
+    end
+  end
+
   private
 
     def conn
