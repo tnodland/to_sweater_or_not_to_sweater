@@ -362,12 +362,6 @@
         null,
         null
       ],
-      "/Users/tnodland/turing/3module/projects/to_sweater_or_not_to_sweater/app/mailers/application_mailer.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
       "/Users/tnodland/turing/3module/projects/to_sweater_or_not_to_sweater/app/models/restaurant.rb": [
         0,
         0,
@@ -385,28 +379,8 @@
         0,
         0,
         0
-      ],
-      "/Users/tnodland/turing/3module/projects/to_sweater_or_not_to_sweater/app/jobs/application_job.rb": [
-        0,
-        0
-      ],
-      "/Users/tnodland/turing/3module/projects/to_sweater_or_not_to_sweater/app/helpers/application_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/tnodland/turing/3module/projects/to_sweater_or_not_to_sweater/app/channels/application_cable/connection.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/tnodland/turing/3module/projects/to_sweater_or_not_to_sweater/app/channels/application_cable/channel.rb": [
-        0,
-        0,
-        0,
-        0
       ]
     },
-    "timestamp": 1564600908
+    "timestamp": 1564601137
   }
 }

@@ -30,10 +30,10 @@ RSpec.describe Restaurant do
                :display_phone=>"(719) 566-0209",
                :distance=>6971.117622629485}
 
-    restaurant = Restaurant.new(data)
-    expect(restaurant.name).to eq("Kan's Kitchen")
-    expect(restaurant.id).to eq("M4MwxQAA58B7ENV8ootI-w")
-    expect(restaurant.address).to eq("1620 S Prairie Ave Pueblo CO 81005")
+      restaurant = Restaurant.new(data)
+      expect(restaurant.name).to eq("Kan's Kitchen")
+      expect(restaurant.id).to eq("M4MwxQAA58B7ENV8ootI-w")
+      expect(restaurant.address).to eq("1620 S Prairie Ave Pueblo CO 81005")
     end
   end
 end
