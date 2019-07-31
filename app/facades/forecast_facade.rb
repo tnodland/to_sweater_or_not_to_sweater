@@ -1,25 +1,29 @@
 class ForecastFacade
+  attr_reader :id
+
   def initialize(location)
     @location = location
+    @id = SecureRandom.urlsafe_base64
+    @lat = coordinates[:results][0][:geometry][:location][:lat]
+    @lng = coordinates[:results][0][:geometry][:location][:lng]
   end
 
   def image
-    flikr_image(self.coordinates[:lat], self.coordinates[:lng])
+    lat = coordinates[:results][0][:geometry][:location][:lat]
+    lng = coordinates[:results][0][:geometry][:location][:lng]
+    flikr_image(lat, lng)
   end
 
   def current_weather
-    weather = self.weather
-    return weather[:currently]
+    weather[:currently]
   end
 
   def hourly_weather
-    weather = self.weather
-    return weather[:hourly]
+    weather[:hourly]
   end
 
   def daily_weather
-    weather = self.weather
-    return weather[:daily]
+    weather[:daily]
   end
 
   private
@@ -36,11 +40,11 @@ class ForecastFacade
     end
 
     def coordinates
-      @_coordinates ||= JSON.parse(google_service.coordinates_from_location(@location).body, symbolize_names: true)
+      @_coordinates ||= JSON.parse(google_service.coordiantes_from_location(@location).body, symbolize_names: true)
     end
 
     def weather
-      @_weather ||= JSON.parse(darksky_service.weather(self.coordinates[:lat], self.coordinates[:lng]).body, symbolize_names: true)
+      @_weather ||= JSON.parse(darksky_service.weather(@lat, @lng).body, symbolize_names: true)
     end
 
     def flikr_image(lat, long)

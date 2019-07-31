@@ -27,27 +27,27 @@ http_interactions:
       Ratelimit-Dailylimit:
       - '5000'
       Ratelimit-Remaining:
-      - '4956'
+      - '4997'
       Ratelimit-Resettime:
-      - '2019-07-30T00:00:00+00:00'
+      - '2019-08-01T00:00:00+00:00'
       X-Zipkin-Id:
-      - eb3adcfa95389f1e
+      - 7cadf8ceac327ba6
       X-B3-Sampled:
       - '0'
       X-Proxied:
-      - 10-64-66-176-uswest1aprod
+      - 10-64-151-81-uswest1bprod
       Transfer-Encoding:
       - chunked
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 29 Jul 2019 17:17:14 GMT
+      - Wed, 31 Jul 2019 15:49:13 GMT
       Via:
       - 1.1 varnish
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-den19630-DEN
+      - cache-den19634-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -87,5 +87,5 @@ http_interactions:
         "total": 11, "region": {"center": {"longitude": -104.5733642578125, "latitude":
         38.27035217485165}}}'
     http_version: 
-  recorded_at: Mon, 29 Jul 2019 17:17:14 GMT
+  recorded_at: Wed, 31 Jul 2019 15:49:13 GMT
 recorded_with: VCR 5.0.0
