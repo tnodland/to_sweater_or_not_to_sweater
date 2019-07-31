@@ -9,6 +9,6 @@ RSpec.describe "background image spec" do
 
     expect(json).to be_a(Hash)
     expect(json).to have_key(:data)
-    expect(json[:data]).to have_key(:weather)
+    expect(json[:data][:attributes]).to have_key(:weather)
   end
 end
