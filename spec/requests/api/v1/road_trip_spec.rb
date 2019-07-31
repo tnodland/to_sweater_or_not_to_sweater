@@ -11,5 +11,12 @@ RSpec.describe "road trip request" do
 
 
     expect(response).to be_successful
+    json = JSON.parse(response.body, symbolize_names: true)
+
+    expect(json).to be_a(Hash)
+    expect(json[:data]).to have_key(:id)
+    expect(json[:data][:attributes]).to have_key(:id)
+    expect(json[:data][:attributes]).to have_key(:destination)
+    expect(json[:data][:attributes]).to have_key(:weather)
   end
 end

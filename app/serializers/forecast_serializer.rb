@@ -2,10 +2,6 @@ class ForecastSerializer
   include FastJsonapi::ObjectSerializer
   attributes :id
 
-  attribute :image do |object|
-    object.image
-  end
-
   attribute :current_weather do |object|
     object.current_weather
   end
@@ -16,5 +12,5 @@ class ForecastSerializer
 
   attribute :daily_weather do |object|
     object.daily_weather
-  end 
+  end
 end
