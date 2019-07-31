@@ -6,6 +6,7 @@ class Api::V1::UsersController < ActionController::API
     if user.save
       render json: UserSerializer.new(user), status: 201
     else
+      render json: {status: "error", message: "user was not successfully created"}
     end
   end
 

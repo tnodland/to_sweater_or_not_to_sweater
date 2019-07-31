@@ -215,6 +215,8 @@
         1,
         1,
         null,
+        0,
+        null,
         null,
         null
       ],
@@ -271,19 +273,20 @@
       "/Users/tnodland/turing/3module/projects/to_sweater_or_not_to_sweater/app/controllers/api/v1/users_controller.rb": [
         1,
         1,
+        2,
+        2,
+        2,
+        2,
         1,
-        1,
-        1,
-        1,
+        null,
         1,
         null,
         null,
         null,
-        null,
         1,
         null,
         1,
-        1,
+        2,
         null,
         null
       ],
@@ -296,12 +299,13 @@
       "/Users/tnodland/turing/3module/projects/to_sweater_or_not_to_sweater/app/controllers/api/v1/sessions_controller.rb": [
         1,
         1,
-        1,
+        2,
         1,
         1,
         1,
         null,
         null,
+        1,
         null,
         null,
         null
@@ -403,6 +407,6 @@
         0
       ]
     },
-    "timestamp": 1564588644
+    "timestamp": 1564595736
   }
 }

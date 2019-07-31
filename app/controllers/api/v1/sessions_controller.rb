@@ -6,6 +6,7 @@ class Api::V1::SessionsController< ActionController::API
         render json: UserSerializer.new(user), status: 200
       end
     else
+      render json: {status: "error", message: "User not found"}
     end
   end
 end

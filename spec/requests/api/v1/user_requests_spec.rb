@@ -33,4 +33,22 @@ RSpec.describe "User based api requests" do
 
     expect(json[:data][:attributes]).to have_key(:api_key)
   end
+
+  it "can handle improper requests " do
+    post '/api/v1/users', params: {
+      "email": "whatever@example.com"
+    }
+
+    expect(response).to be_successful
+    json = JSON.parse(response.body, symbolize_names: true)
+    expect(json).to have_key(:status)
+    
+    post '/api/v1/sessions', params: {
+      "email": "example@mail.com",
+      "password": "password"}
+
+    expect(response).to be_successful
+    json = JSON.parse(response.body, symbolize_names: true)
+    expect(json).to have_key(:status)
+  end
 end
